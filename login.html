@@ -1,104 +1,97 @@
-<!DOCTYPE html> 
-<html> 
-<style> 
-    /*set border to the form*/ 
-    
-    form { 
-        border: 3px solid #f1f1f1; 
-    } 
-    /*assign full width inputs*/ 
-    
-    input[type=text], 
-    input[type=password] { 
-        width: 100%; 
-        padding: 12px 20px; 
-        margin: 8px 0; 
-        display: inline-block; 
-        border: 1px solid #ccc; 
-        box-sizing: border-box; 
-    } 
-    /*set a style for the buttons*/ 
-    
-    button { 
-        background-color: #4CAF50; 
-        color: white; 
-        padding: 14px 20px; 
-        margin: 8px 0; 
-        border: none; 
-        cursor: pointer; 
-        width: 100%; 
-    } 
-    /* set a hover effect for the button*/ 
-    
-    button:hover { 
-        opacity: 0.8; 
-    } 
-    /*set extra style for the cancel button*/ 
-    
-    .cancelbtn { 
-        width: auto; 
-        padding: 10px 18px; 
-        background-color: #f44336; 
-    } 
-    /*centre the display image inside the container*/ 
-    
-    .imgcontainer { 
-        text-align: center; 
-        margin: 24px 0 12px 0; 
-    } 
-    /*set image properties*/ 
-    
-    img.avatar { 
-        width: 40%; 
-        border-radius: 50%; 
-    } 
-    /*set padding to the container*/ 
-    
-    .container { 
-        padding: 16px; 
-    } 
-    /*set the forgot password text*/ 
-    
-    span.psw { 
-        float: right; 
-        padding-top: 16px; 
-    } 
-    /*set styles for span and cancel button on small screens*/ 
-    
-    @media screen and (max-width: 300px) { 
-        span.psw { 
-            display: block; 
-            float: none; 
-        } 
-        .cancelbtn { 
-            width: 100%; 
-        } 
-    } 
-</style> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V8</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+					<span class="login100-form-title">
+						Sign In
+					</span>
 
-<body> 
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100"></span>
+					</div>
 
-    <h2>Login Form</h2> 
-    <!--Step 1 : Adding HTML-->
-    <form action="/action_page.php"> 
+					<div class="wrap-input100 validate-input" data-validate = "Please enter password">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+					</div>
 
-        <div class="container"> 
-            <label><b>Username</b></label> 
-            <input type="text" placeholder="Enter Username" name="uname" required> 
+					<div class="text-right p-t-13 p-b-23">
+						<span class="txt1">
+							Forgot
+						</span>
 
-            <label><b>Password</b></label> 
-            <input type="password" placeholder="Enter Password" name="psw" required> 
+						<a href="#" class="txt2">
+							Username / Password?
+						</a>
+					</div>
 
-            <button type="submit">Login</button> 
-            <input type="checkbox" checked="checked"> Remember me 
-        </div> 
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Sign in
+						</button>
+					</div>
 
-        <div class="container" style="background-color:#f1f1f1"> 
-            <button type="button" class="cancelbtn">Cancel</button> 
-            <span class="psw"><a href="#">I forgot my password?</a></span> 
-        </div> 
-    </form> 
+					<div class="flex-col-c p-t-170 p-b-40">
+						<span class="txt1 p-b-9">
+							Don’t have an account?
+						</span>
 
-</body> 
+						<a href="#" class="txt3">
+							Sign up now
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
-</html> 
+</body>
+</html>
